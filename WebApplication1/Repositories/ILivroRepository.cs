@@ -9,4 +9,6 @@ public interface ILivroRepository
     Task AdicionarAsync(Livro livro);
     Task AtualizarAsync(Livro livro);
     Task RemoverAsync(Livro livro);
+    
+    Task<List<Livro>> ObterPorAutorAsync(string autor);
 }

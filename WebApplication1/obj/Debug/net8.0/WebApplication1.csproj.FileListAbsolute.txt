@@ -109,3 +109,4 @@ C:\Users\Aluno\RiderProjects\WebApplication1\WebApplication1\obj\Debug\net8.0\re
 C:\Users\Aluno\RiderProjects\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.pdb
 C:\Users\Aluno\RiderProjects\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.genruntimeconfig.cache
 C:\Users\Aluno\RiderProjects\WebApplication1\WebApplication1\obj\Debug\net8.0\ref\WebApplication1.dll
+C:\Users\Aluno\RiderProjects\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.sourcelink.json

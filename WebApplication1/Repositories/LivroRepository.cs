@@ -15,12 +15,16 @@ public class LivroRepository : ILivroRepository
     
     public async Task<List<Livro>> ObterTodosAsync()
     {
-        return await _context.Livros.ToListAsync();
+        return await _context.Livros
+            .Include(l=> l.Genero)
+            .ToListAsync();
     }
 
     public async Task<Livro?> ObterPorIdAsync(int id)
     {
-        return await _context.Livros.FindAsync(id);
+        return await _context.Livros
+            .Include(l=> l.Genero)
+            .FirstOrDefaultAsync(l => l.Id == id);
     }
 
     public async Task AdicionarAsync(Livro livro)
@@ -39,5 +43,13 @@ public class LivroRepository : ILivroRepository
     {
         _context.Livros.Remove(livro);
         await _context.SaveChangesAsync();
+    }
+
+    public async Task<List<Livro>> ObterPorAutorAsync(string autor)
+    {
+        return await _context.Livros
+            .Include(l => l.Genero)
+            .Where(l => EF.Functions.ILike(l.Autor, $"%{autor}"))
+            .ToListAsync();
     }
 }

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WebApplication1.DTOs;
 using WebApplication1.Models;
-using WebApplication1.Repositories;
 using WebApplication1.Services;
 
 namespace WebApplication1.Controllers;
@@ -17,9 +17,9 @@ public class LivroController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<List<Livro>>> Listar()
+    public async Task<ActionResult<List<Livro>>> Listar([FromQuery] string? autor)
     {
-        return Ok(await _service.ListarAsync());
+        return Ok(await _service.ListarAsync(autor));
     }
 
     [HttpGet("{id}")]
@@ -30,10 +30,10 @@ public class LivroController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<Livro>> Criar(Livro livro)
+    public async Task<ActionResult<Livro>> Criar(LivroDto livro)
     {
         var criado = await _service.CriarAsync(livro);
-        return CreatedAtAction(nameof(ObterPorId), new {id = criado.ID}, criado);
+        return CreatedAtAction(nameof(ObterPorId), new {id = criado.Id}, criado);
     }
 
     [HttpPut("{id:int}")]
