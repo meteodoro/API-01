@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "WebApplication1/1.0.0": {
         "dependencies": {
+          "Medo.Uuid7": "3.2.0",
           "Microsoft.AspNetCore.OpenApi": "8.0.30",
           "Microsoft.EntityFrameworkCore.Design": "8.0.30",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.30",
@@ -23,6 +24,14 @@
           "lib/net6.0/Humanizer.dll": {
             "assemblyVersion": "2.14.0.0",
             "fileVersion": "2.14.1.48190"
+          }
+        }
+      },
+      "Medo.Uuid7/3.2.0": {
+        "runtime": {
+          "lib/net8.0/Medo.Uuid7.dll": {
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
           }
         }
       },
@@ -593,6 +602,13 @@
       "sha512": "sha512-lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
+    },
+    "Medo.Uuid7/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-18Gp47N8I7Vq319f5qTEdqX1GPOworXeNIjuxLN3Szqz96aMuORklGbnSllhEUmQZf3UWmp+X9pVDCKEf5zoaA==",
+      "path": "medo.uuid7/3.2.0",
+      "hashPath": "medo.uuid7.3.2.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.OpenApi/8.0.30": {
       "type": "package",

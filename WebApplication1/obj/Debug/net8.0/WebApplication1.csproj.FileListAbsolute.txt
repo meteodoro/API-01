@@ -110,3 +110,4 @@ C:\Users\Aluno\RiderProjects\WebApplication1\WebApplication1\obj\Debug\net8.0\We
 C:\Users\Aluno\RiderProjects\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.genruntimeconfig.cache
 C:\Users\Aluno\RiderProjects\WebApplication1\WebApplication1\obj\Debug\net8.0\ref\WebApplication1.dll
 C:\Users\Aluno\RiderProjects\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.sourcelink.json
+C:\Users\Aluno\RiderProjects\WebApplication1\WebApplication1\bin\Debug\net8.0\Medo.Uuid7.dll
